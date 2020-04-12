@@ -1,0 +1,275 @@
+/*keseluruhan*/
+
+body {
+    font-family: 'Montserrat', 'Gotu', sans-serif;
+}
+
+.page-section, .fadeInStart {
+  opacity: 0;
+}
+
+h1 {
+text-align: left;
+}
+
+hr {
+  border: solid 1px;
+}
+
+/*pembuka*/
+
+#opening {
+  background: url("../IMAGES/1189413.jpg") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 30px;
+}
+
+#opening .jumbotron { 
+  background-color: rgba(0,0,0,0.25)
+  padding: 20px;
+}
+
+/*artikel terkini*/
+
+#article a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#article a:hover {
+  text-shadow: 2px 2px #2980b9;
+}
+
+#article p {
+  text-align: justify;
+}
+
+#article small {
+  background-color: #4834d4;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+}
+
+#article img {
+  border-radius: 7px;
+}
+
+#article #konten {
+  padding-left: 25px;
+}
+
+#article a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#article a:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px #2980b9;
+}
+
+/*info kesehatan*/
+
+#info small {
+  background-color: #6ab04c;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+}
+
+#info img {
+  border-radius: 7px;
+}
+
+#info #konten {
+  padding-left: 25px;
+}
+
+#info a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#info a:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px #2980b9;
+}
+
+#info #info2 {
+  background-color: #f1c40f;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+}
+
+/*untuk ensiklopedia*/
+
+#ensiklopedia {
+  background: url("../IMAGES/simplewhite.jpg");
+}
+
+#ensiklopedia .ensia {
+  background: #4834d4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+  height: 70px;
+}
+
+#ensiklopedia li {
+  list-style: none;
+}
+
+#ensiklopedia a{
+  color: #000000;
+  text-decoration: none;
+}
+
+#ensiklopedia a:hover{
+  text-shadow: 2px 2px #2980b9; 
+}
+
+
+/*untuk alamat*/
+#jadwal .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px
+}
+
+#jadwal.card1 {
+  padding 10px;
+}
+
+/*footer*/
+#footer {
+  color: #ffffff;
+  padding: 20px;
+}
+
+/*untuk responsive slide*/
+
+/*Callback*/
+
+.callbacks_container2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+/*ReponsiveSlide*/
+
+.rslides {
+    margin: 0 auto 40px;
+    }
+  
+/* Callback example */  
+  #wrapper {
+    padding: 20px;
+    }
+  
+  .events {
+    list-style: none;
+    }
+  
+  .callbacks_container {
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    width: 100%;
+    }
+  
+  .callbacks {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .callbacks li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .callbacks img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+    }
+  
+  .callbacks .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    text-shadow: none;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0, .8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: none;
+    }
+  
+  .callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: url("../IMAGES/themes.gif");
+    margin-top: -45px;
+    }
+  
+  .callbacks_nav:active {
+    opacity: 1.0;
+    }
+  
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+    }
+  
+  @media screen and (max-width: 600px) {
+    .callbacks_nav {
+      top: 47%;
+      }
+    }

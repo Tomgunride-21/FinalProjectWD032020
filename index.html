@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ferry</title>
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="IMAGES/medical-icon-png-6571-Windows.ico">
+    
+    <!--Link GoogleFont Awesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Link Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    
+    <!--Link Bootstrap CSS dan JS-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--Link Custom JavaScript-->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!--Link Custom CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!--RESPONSIVESLIDES-->
+	  <link rel="stylesheet" href="js/ResponsiveSlides/responsiveslides.css">
+	  <script type="text/javascript" src="js/ResponsiveSlides/responsiveslides.js"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          maxwidth: 1000,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+      });
+    </script>
+    <!--Link Jquery
+    <style src="jquery-3.4.1.min.js"></style>-->
+    
+</head>
+<body>
+    <!--Bagian Navbar Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fadeInStart">
+        <a class="navbar-brand d-none d-md-block scroll-top" href="index.html"><img src="IMAGES/DR-FERRY-LOGO.png" alt=""></a>
+        <a class="navbar-brand d-block d-md-none scroll-top" href="index.html"><img src="IMAGES/DR-FERRY-LOGO-2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavS" aria-controls="navbarNavS" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavS">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#" data-id="article">Artikel Terbaru</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#" data-id="info">Info Kesehatan</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-id="ensiklopedia">
+                Ensiklopedia
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Obat</a>
+                <a class="dropdown-item" href="#">Penyakit</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#" data-id="konsultasi">Konsultasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#" data-id="profil">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#" data-id="jadwal">Jadwal Praktik</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+	<!--OPENING-->
+	<div id="opening" class="container-fluid fadeInStart">   
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+        <div class="container">
+        <div class="jumbotron">
+          <h3>Selamat Datang di Klinik Dr. Ferry</h3>
+          <p class="lead">Membagikan informasi seputar dunia kesehatan dalam sebuah blog pribadi.</p>
+          <hr class="my-4">
+          <p>Dokter yang mendedikasikan hidupnya untuk kesehatan masyarakat</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="profil.html" role="button">Ingin Tahu</a>
+          </p>
+        </div>
+      </div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+  </div>
+  
+
+  <!--Artikel Terbaru-->
+  <div class="container page-section">
+      <div class="callbacks_container">
+        <h1>Artikel Kesehatan Terkini</h1>
+        <ul class="rslides" id="slider4">
+          <li>
+            <img src="IMAGES/Ketahui-Cara-untuk-Mencegah-Penularan-Coronavirus.jpg" alt="">
+            <p class="caption"><a href="">5 Cara Efektif agar Tidak Tertular Virus Corona</a></p>
+          </li>
+          <li>
+            <img src="IMAGES/amankah-mendonorkan-darah-saat-virus-corona-melanda-alodokter.jpg" alt="">
+            <p class="caption"><a href="">Amankah Mendonorkan Darah Saat Virus Corona Melanda?</a></p>
+          </li>
+          <li>
+            <img src="IMAGES/bahaya-di-balik-gigi-berlubang-pada-anak-alodokter.jpg" alt="">
+            <p class="caption"><a href="">Bahaya di Balik Gigi Berlubang pada Anak</a></p>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+
+  <div id="article" class="container page-section">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="article.html"><small>terbaru</small></a>
+        <img src="IMAGES/mitos-dan-fakta-seputar-berjemur-saat-pandemi-covid-19.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Mitos dan Fakta Seputar Berjemur Saat Pandemi COVID-19</a></b></h4>
+        <br/>
+        <p>Beredar kabar bahwa berjemur di bawar sinar matahari dapat membunuh virus Corona dan mencegah penularan COVID-19. Benarkah sinar matahari...</p>
+        <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="article.html"><small>terbaru</small></a>
+        <img src="IMAGES/pentingnya-menerapkan-social-distancing-demi-mencegah-covid-19.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Pentingnya Menerapkan Social Distancing Demi Mencegah COVID-19</a></b></h4>
+        <br/>
+        <p>Dalam upaya menangani wabah virus Corona yang semakin meluas, pemerintah menganjurkan masyarakat untuk menerapkan social distancing atau pembatasan sosial. Mari kenali apa itu...</p>
+        <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="article.html"><small>terbaru</small></a>
+        <img src="IMAGES/ketahui-sederet-obat-obatan-corona-di-sini.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Ketahui Sederet Obat-Obatan Corona di Sini</a></b></h4>
+        <br/>
+        <p>Setiap hari, pasien positif virus Corona kian bertambah. Namun, antivirus atau vaksin untuk mengatasi virus ini belum juga berhasil ditemukan. Para peneliti pun...</p>
+        <br/>
+      </div>
+    </div>
+
+  </div>
+  
+  <hr/>
+
+  <!--Info Kesehatan-->
+  <div id="info" class="container page-section">
+    <h1>Info Kesehatan</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="keluarga.html"><small>keluarga</small></a>
+        <img src="IMAGES/tips-agar-anak-tidak-bosan-di-rumah-selama-pandemi-covid-19.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Tips agar Anak Tidak Bosan di Rumah Selama Pandemi COVID-19</a></b></h4>
+        <br/>
+        <p>Pandemi COVID-19 membuat anak-anak tidak bisa bermain di luar rumah atau pergi ke sekolah. Alhasil...</p>
+        <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="hidupsehat.html"><small id="info2">hidup sehat</small></a>
+        <img src="IMAGES/jangan-asal-asalan-begini-cara-menyikat-gigi-yang-tepat.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Jangan Asal-asalan, Begini Cara Menyikat Gigi yang Tepat</a></b></h4>
+        <br/>
+        <p>Untuk menjaga kesehatan gigi dan mulut, menyikat gigi dengan rutin saja tidak cukup. Cara menyikat...</p>
+        <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="keluarga.html"><small>keluarga</small></a>
+        <img src="IMAGES/tips-menjaga-kesehatan-anak-di-musim-pancaroba.jpg" alt="">
+      </div>
+      <div id="konten" class="col-md-8">
+        <h4><b><a href="">Tips Menjaga Kesehatan Anak di Musim Pancaroba</a></b></h4>
+        <br/>
+        <p>Musim pancaroba merupakan masa peralihan dari satu musim ke musim lainnya. Pada musim ini, umumnya...</p>
+        <br/>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!--Ensiklopedia-->
+  <div id="ensiklopedia" class="container-fluid page-section">
+    <div class="container">
+      <h1>Ensiklopedia Kesehatan</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Obat</h3>
+          <div class="row">
+            <div class="col-md-2 ensia">A</div>
+            <div class="col-md-10">
+              <ul>
+                <li><a href="">Acarbose</a></li>
+                <li><a href="">Acetazolamide</a></li>
+                <li><a href="">Actifed</a></li>
+                <li><a href="obat.html">Lainnya..</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Penyakit</h3>
+          <div class="row">
+            <div class="col-md-2 ensia">A</div>
+            <div class="col-md-10">
+              <ul>
+                <li><a href="">Ablasi Retina</a></li>
+                <li><a href="">Abses Gigi</a></li>
+                <li><a href="">Abses Paru</a></li>
+                <li><a href="penyakit.html">Lainnya..</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+
+  <!--Contact-->
+  <!--Java untuk Hide Show-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.hidemap').hide(1000);
+      $('#show-e').click(function(){
+			$('.hidemap').toggle(300);
+		});
+    });
+  </script>
+  <!--pertama maps akan di-hide, akan terbuka jika-menklik button alamat-->
+  <div id="jadwal" class="container page-section">
+    <h1>Ingin Berobat?</h1>
+    <div class="row">
+      <div class="col-md-6 card1">
+        <div class="card">
+          <p>Course-Net Jakarta
+            Business Park Kb. Jeruk, Ruko, Jl. Meruya Ilir Raya No.9, RT.1/RW.5, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620</p>
+            <button type="button" class="btn btn-primary btn-lg" id="show-e">Alamat</button>
+        </div>
+      </div>
+      <div class="col-md-6 "><div class="col-md-6 hidemap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.490805743847!2d106.75912531476901!3d-6.198792995512491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7186216690b%3A0x5fe8944030e526af!2sCourse-Net%20Jakarta!5e0!3m2!1sid!2sid!4v1586686318229!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+      <div class="col-md-6"></div></div>
+    </div>
+  </div>
+  <div id="footer" class="container-fluid bg-primary">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="float-left">Copyrighht &copy; 2020. Tommy Gunawan</p>
+        <p class="float-right">Untuk Final Project Web Design</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
